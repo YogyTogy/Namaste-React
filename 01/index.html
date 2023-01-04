@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NR</title>
+  </head>
+  <body>
+    <div id="root">Not Rendered</div>
+
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+
+    <script>
+
+        const heading1 = React.createElement('h1', {}, 'This is h1')
+        const heading2 = React.createElement('h2', {}, 'This is h2')
+        const heading3 = React.createElement('h3', {}, 'This is h3')
+
+        const container = React.createElement('div',{id:'container'},
+        [heading1,heading2,heading3])
+
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        
+        root.render(container)
+
+
+    </script>
+
+  </body>
+</html>
